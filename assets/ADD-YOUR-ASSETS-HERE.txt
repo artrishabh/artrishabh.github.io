@@ -1,0 +1,11 @@
+Place your resume, screenshots, GIFs, videos, and project images in this folder.
+Suggested structure:
+
+assets/
+  Rishabh_Jain_Resume.pdf
+  images/
+    hero.jpg
+    nodesmith-cover.jpg
+    netherborne-cover.jpg
+    statescape-cover.jpg
+    technical-art-rigging.jpg
