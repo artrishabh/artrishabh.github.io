@@ -38,3 +38,8 @@ Then open `http://localhost:8000`.
 ## Image reliability
 
 The homepage, catalogue cards, and game-page hero covers use local assets so they do not depend on third-party image loading. Five featured games include local itch.io screenshots. Other galleries try to load their itch.io screenshots and automatically replace any blocked or unavailable image with a designed project placeholder.
+
+## Cozy visual theme
+The portfolio now loads `cozy-theme.css` after the original styles and uses `cozy-theme.js` for its palette picker. Game pages additionally load `games/cozy-game-theme.css`.
+
+The three available palettes are Sunlit Workshop, Berry Picnic, and Forest Camp. See `COZY_THEME_GUIDE.md` for the color-system files and editing notes.

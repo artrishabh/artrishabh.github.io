@@ -17,20 +17,23 @@ const setActiveLink = (sectionId) => {
   });
 };
 
-if ('IntersectionObserver' in window) {
-  const sectionObserver = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+const updateActiveSection = () => {
+  if (!sections.length) return;
 
-      if (visible) setActiveLink(visible.target.dataset.section);
-    },
-    { rootMargin: '-20% 0px -55% 0px', threshold: [0.1, 0.35, 0.6] }
-  );
+  const documentHeight = document.documentElement.scrollHeight;
+  const atPageBottom = window.scrollY + window.innerHeight >= documentHeight - 8;
+  if (atPageBottom) {
+    setActiveLink(sections[sections.length - 1].dataset.section);
+    return;
+  }
 
-  sections.forEach((section) => sectionObserver.observe(section));
-}
+  const viewportMarker = window.innerHeight * 0.38;
+  let activeSection = sections[0];
+  sections.forEach((section) => {
+    if (section.getBoundingClientRect().top <= viewportMarker) activeSection = section;
+  });
+  setActiveLink(activeSection.dataset.section);
+};
 
 const closeMenu = () => {
   nav?.classList.remove('open');
@@ -45,7 +48,11 @@ menuToggle?.addEventListener('click', () => {
   document.body.classList.toggle('menu-open', open);
 });
 
-navLinks.forEach((link) => link.addEventListener('click', closeMenu));
+navLinks.forEach((link) => link.addEventListener('click', () => {
+  closeMenu();
+  const sectionId = link.getAttribute('href')?.slice(1);
+  if (sectionId) setActiveLink(sectionId);
+}));
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
@@ -65,6 +72,9 @@ window.addEventListener('resize', () => {
 });
 
 const revealItems = [...document.querySelectorAll('.reveal')];
+revealItems.forEach((item, index) => {
+  item.style.setProperty('--reveal-delay', `${(index % 4) * 70}ms`);
+});
 if (reduceMotion || !('IntersectionObserver' in window)) {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 } else {
@@ -87,6 +97,7 @@ const updateScrollUI = () => {
   const progress = maxScroll > 0 ? window.scrollY / maxScroll : 0;
   progressBar.style.transform = `scaleX(${Math.min(1, Math.max(0, progress))})`;
   backToTop.classList.toggle('visible', window.scrollY > window.innerHeight * 0.7);
+  updateActiveSection();
   scrollTicking = false;
 };
 
@@ -118,6 +129,7 @@ if (!reduceMotion && hero && heroAtmosphere) {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 updateScrollUI();
+updateActiveSection();
 
 // Load selected-game artwork from local asset folders. Add either cover.* or shot-1.*
 // to assets/games/<game-slug>/ and the homepage card updates automatically.

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Rishabh Jain is a technical artist and game developer focused on tools, production pipelines, VFX, and playable experiences." />
-  <meta name="theme-color" content="#07090b" />
+  <meta name="theme-color" content="#fff6df" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Rishabh Jain | Technical Artist & Game Developer" />
   <meta property="og:description" content="Tools, pipelines, visual effects, and games by Rishabh Jain." />
@@ -12,14 +12,16 @@
   <meta property="og:url" content="https://artrishabh.github.io/" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://artrishabh.github.io/" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml" />
   <title>Rishabh Jain | Technical Artist & Game Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <script>document.documentElement.classList.add('js');</script>
+  <script src="cozy-theme.js"></script>
   <link rel="stylesheet" href="styles.css?v=4" />
-  <link rel="stylesheet" href="portfolio-expansion.css?v=2" />
+  <link rel="stylesheet" href="portfolio-expansion.css?v=3" />
+  <link rel="stylesheet" href="cozy-theme.css?v=2" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -42,6 +44,15 @@
         <a class="nav-link" href="#resume"><span>05</span> Resume</a>
         <a class="nav-link" href="#contact"><span>06</span> Contact</a>
       </nav>
+
+      <div class="theme-picker" aria-label="Choose a cozy color palette">
+        <span class="theme-picker-label">Color mood</span>
+        <div class="theme-options">
+          <button class="theme-option" type="button" data-theme-choice="sunny" aria-label="Use Sunlit Workshop palette" aria-pressed="true" title="Sunlit Workshop"><i aria-hidden="true"></i><span>Sunny</span></button>
+          <button class="theme-option" type="button" data-theme-choice="berry" aria-label="Use Berry Picnic palette" aria-pressed="false" title="Berry Picnic"><i aria-hidden="true"></i><span>Berry</span></button>
+          <button class="theme-option" type="button" data-theme-choice="forest" aria-label="Use Forest Camp palette" aria-pressed="false" title="Forest Camp"><i aria-hidden="true"></i><span>Forest</span></button>
+        </div>
+      </div>
 
       <div class="sidebar-status" aria-label="Portfolio focus">
         <i aria-hidden="true"></i>
@@ -91,10 +102,10 @@
         </div>
 
         <div class="hero-coordinate" aria-hidden="true">PORTFOLIO / 2026</div>
-        <div class="scroll-cue" aria-hidden="true">
+        <a class="scroll-cue" href="#experience" aria-label="Scroll to explore the portfolio">
           <span>Scroll to explore</span>
-          <i></i>
-        </div>
+          <i aria-hidden="true"></i>
+        </a>
       </section>
 
       <section class="section" id="experience" data-section="experience">
@@ -108,17 +119,21 @@
           <div class="timeline">
             <article class="timeline-item reveal">
               <div class="timeline-marker"></div>
-              <div class="experience-logo-wrap">
-                <img class="experience-logo experience-logo--scopely" src="assets/images/scopely-logo.png" alt="Scopely logo" width="96" height="96" />
-              </div>
               <div class="timeline-content">
-                <div class="experience-heading">
-                  <h3>Technical Art Intern</h3>
-                  <p class="experience-date"><time datetime="2025-12">Dec 2025</time> — Present</p>
-                </div>
-                <div class="experience-subheading">
-                  <p class="experience-company">Scopely</p>
-                  <p class="experience-location">Bengaluru, India</p>
+                <div class="experience-top">
+                  <div class="experience-logo-wrap">
+                    <img class="experience-logo experience-logo--scopely" src="assets/images/scopely-logo.png" alt="Scopely logo" width="76" height="76" />
+                  </div>
+                  <div class="experience-meta">
+                    <div class="experience-heading">
+                      <h3>Technical Art Intern</h3>
+                      <p class="experience-date"><time datetime="2025-12">Dec 2025</time> — Present</p>
+                    </div>
+                    <div class="experience-subheading">
+                      <p class="experience-company">Scopely</p>
+                      <p class="experience-location">Bengaluru, India</p>
+                    </div>
+                  </div>
                 </div>
                 <p class="role-note"><b>Looney Tunes World of Mayhem</b></p>
                 <ul>
@@ -132,22 +147,26 @@
               </div>
             </article>
 
-            <article class="timeline-item reveal">
+            <article class="timeline-item timeline-item--overdare reveal">
               <div class="timeline-marker"></div>
-              <div class="experience-logo-wrap">
-                <picture>
-                  <source srcset="assets/images/overdare-logo.webp" type="image/webp" />
-                  <img class="experience-logo experience-logo--overdare" src="assets/images/overdare-logo.png" alt="OVERDARE logo" width="96" height="96" />
-                </picture>
-              </div>
               <div class="timeline-content">
-                <div class="experience-heading">
-                  <h3>Contract Game Developer <span class="role-type">Contract</span></h3>
-                  <p class="experience-date"><time datetime="2025-08">Aug 2025</time> — <time datetime="2025-12">Dec 2025</time></p>
-                </div>
-                <div class="experience-subheading">
-                  <p class="experience-company">OVERDARE - Krafton</p>
-                  <p class="experience-location">Remote · South Korea</p>
+                <div class="experience-top">
+                  <div class="experience-logo-wrap">
+                    <picture>
+                      <source srcset="assets/images/overdare-logo.webp" type="image/webp" />
+                      <img class="experience-logo experience-logo--overdare" src="assets/images/overdare-logo.png" alt="OVERDARE logo" width="76" height="76" />
+                    </picture>
+                  </div>
+                  <div class="experience-meta">
+                    <div class="experience-heading">
+                      <h3>Contract Game Developer</h3>
+                      <p class="experience-date"><time datetime="2025-08">Aug 2025</time> — <time datetime="2025-12">Dec 2025</time></p>
+                    </div>
+                    <div class="experience-subheading">
+                      <p class="experience-company">OVERDARE - Krafton</p>
+                      <p class="experience-location">Remote · South Korea</p>
+                    </div>
+                  </div>
                 </div>
                 <p class="role-note">Three Multiplayer Games</p>
                 <ul>
@@ -171,7 +190,7 @@
               <p class="eyebrow">THE COOOL STUFF!</p>
               <h2>Technical Art</h2>
             </div>
-            <p>Check various different Technical Art Projects and Contributions I have Made</p>
+            <p class="technical-coming-soon">Stay tuned — more stuff coming soon!</p>
           </div>
 
           <div class="showreel-grid">
@@ -234,6 +253,14 @@
             <a class="game-card game-graycing reveal" data-game-image="graycing" href="games/graycing.html" aria-label="Open Graycing game page">
               <div class="game-index">06</div>
               <div class="game-info"><p>Arcade Racing · Unity</p><h3>Graycing</h3><span>Developer</span><b>View game page →</b></div>
+            </a>
+            <a class="games-catalogue-cta reveal" href="games/index.html" aria-label="View the complete games catalogue">
+              <div>
+                <p class="card-kicker">More projects</p>
+                <h3>View all games</h3>
+                <p>Browse the complete catalogue of released games, jam projects, and prototypes.</p>
+              </div>
+              <span aria-hidden="true">Explore catalogue <b>→</b></span>
             </a>
           </div>
         </div>
