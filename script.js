@@ -118,3 +118,33 @@ if (!reduceMotion && hero && heroAtmosphere) {
 
 document.getElementById('year').textContent = new Date().getFullYear();
 updateScrollUI();
+
+// Load selected-game artwork from local asset folders. Add either cover.* or shot-1.*
+// to assets/games/<game-slug>/ and the homepage card updates automatically.
+(() => {
+  const extensions = ['webp', 'png', 'jpg', 'jpeg', 'avif'];
+
+  const probeFirstAvailable = (candidates) => new Promise((resolve) => {
+    let index = 0;
+    const probe = new Image();
+    const tryNext = () => {
+      if (index >= candidates.length) {
+        resolve(null);
+        return;
+      }
+      const candidate = candidates[index++];
+      probe.onload = () => resolve(candidate);
+      probe.onerror = tryNext;
+      probe.src = candidate;
+    };
+    tryNext();
+  });
+
+  document.querySelectorAll('[data-game-image]').forEach(async (card) => {
+    const slug = card.dataset.gameImage;
+    const stems = ['cover', 'shot-1'];
+    const candidates = stems.flatMap((stem) => extensions.map((extension) => `assets/games/${slug}/${stem}.${extension}`));
+    const source = await probeFirstAvailable(candidates);
+    if (source) card.style.setProperty('--game-image', `url("${source}")`);
+  });
+})();

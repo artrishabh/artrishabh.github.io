@@ -16,11 +16,6 @@ window.GAME_DATA = [
     status: "Released",
     download: "317–338 MB",
     videoId: "wCpRkn7GMN4",
-    images: [
-      "../assets/games/squeak-off/shot-1.png",
-      "../assets/games/squeak-off/shot-2.png",
-      "../assets/games/squeak-off/shot-3.png"
-    ],
     controls: ["WASD — Move", "Left Mouse — Shoot", "E — Interact", "Space — Roll", "Q — Use item"],
     credits: [["Game Design", "Rishabh Jain"], ["Development", "Prince Choudhary"], ["Game Art", "Karthik Anil Kumar"]]
   },
@@ -40,11 +35,6 @@ window.GAME_DATA = [
     release: "Released",
     status: "Released",
     download: "158 MB",
-    images: [
-      "https://img.itch.zone/aW1hZ2UvMzMzMDcwMC8xOTkwNTY1Ny5wbmc%3D/347x500/O3DDBD.png",
-      "https://img.itch.zone/aW1hZ2UvMzMzMDcwMC8xOTkwNTY1Ni5wbmc%3D/347x500/u7jv3s.png",
-      "https://img.itch.zone/aW1hZ2UvMzMzMDcwMC8xOTkwNTY1OC5wbmc%3D/347x500/%2F%2BMJBZ.png"
-    ],
     controls: ["WASD — Move", "Space — Jump", "E — Switch worlds", "Left Mouse — Use pickaxe", "R — Restart"],
     credits: [["Team", "TkGluk · kartdoodle · Prince0p7 · Exity"]]
   },
@@ -65,11 +55,6 @@ window.GAME_DATA = [
     status: "Released",
     download: "33 MB",
     videoId: "gZ14W4phJ0s",
-    images: [
-      "../assets/games/nodesmith/shot-1.png",
-      "../assets/games/nodesmith/shot-2.png",
-      "../assets/games/nodesmith/shot-3.png"
-    ],
     controls: ["Read the dialogue prompts", "Drag and connect nodes", "Use the node graph to control the test subject"],
     credits: [["Game Development & Design", "Rishabh Jain · Prothom Pal"], ["Game Art", "Nandita Agrawal"]]
   },
@@ -89,11 +74,6 @@ window.GAME_DATA = [
     release: "Released",
     status: "Released",
     download: "35 MB",
-    images: [
-      "https://img.itch.zone/aW1nLzE3NzI3NDU5LmpwZw%3D%3D/original/yIslI7.jpg",
-      "https://img.itch.zone/aW1hZ2UvMjk2Mzc3MC8xNzcyNzUyMy5qcGc%3D/347x500/H0Et3k.jpg",
-      "https://img.itch.zone/aW1hZ2UvMjk2Mzc3MC8xNzcyNzUyNC5wbmc%3D/347x500/0mhvZ1.png"
-    ],
     controls: ["Left Mouse — Move to adjacent tiles", "Hold Right Mouse — Absorb air and change state", "R — Restart", "Esc — Menu"],
     credits: [["Programming & Development", "Rishabh Jain"], ["Tools & Systems", "Prince Choudhary"], ["Game Design & Sound", "Prothom Pal"], ["Game Art", "Karthik Anil Kumar"]]
   },
@@ -114,11 +94,6 @@ window.GAME_DATA = [
     status: "Released",
     download: "76 MB",
     videoId: "RnvwLFvkwUE",
-    images: [
-      "../assets/games/netherborne/shot-1.png",
-      "../assets/games/netherborne/shot-2.png",
-      "../assets/games/netherborne/shot-3.png"
-    ],
     controls: ["Two input devices required", "Best played with one keyboard and one gamepad", "Press Enter on keyboard and Start on gamepad to spawn both characters"],
     credits: [["Programming & Development", "Rishabh Jain"], ["Game Art", "Karthik Anil Kumar"], ["Game Design", "Anubhav Roy"]]
   },
@@ -139,11 +114,6 @@ window.GAME_DATA = [
     status: "Released",
     download: "58 MB",
     videoId: "O94bNXereZU",
-    images: [
-      "../assets/games/bean-em-all/shot-1.jpeg",
-      "../assets/games/bean-em-all/shot-2.jpeg",
-      "../assets/games/bean-em-all/shot-3.jpeg"
-    ],
     controls: ["WASD — Move", "Hold and release Left Mouse — Aim and shoot", "Space — Dash", "Attack adjacent enemies to trigger a Bean-Reaction"],
     credits: [["Game Design", "Rishabh Jain"], ["Game Development", "Prince Choudhary"], ["Game Art", "Karthik Anil Kumar"]]
   },
@@ -163,11 +133,6 @@ window.GAME_DATA = [
     release: "Released",
     status: "Released",
     download: "54 MB",
-    images: [
-      "https://img.itch.zone/aW1hZ2UvMjcyMTg5My8xNjIzMDE5My5qcGVn/347x500/79GKST.jpeg",
-      "https://img.itch.zone/aW1hZ2UvMjcyMTg5My8xNjIzMDE5NC5qcGVn/347x500/l1NzCR.jpeg",
-      "https://img.itch.zone/aW1hZ2UvMjcyMTg5My8xNjIzMDE5Mi5qcGVn/347x500/we3alf.jpeg"
-    ],
     controls: ["A / D — Steer", "Right Mouse — Jump and override", "Left Mouse — Dash through objects"],
     credits: [["Game Design", "Rishabh Jain"], ["Development", "Prince Choudhary"], ["Game Art", "Karthik Anil Kumar · Shakib Khan"]]
   },
@@ -187,11 +152,6 @@ window.GAME_DATA = [
     release: "25 Apr 2021",
     status: "Released",
     download: "74 MB",
-    images: [
-      "../assets/games/graycing/shot-1.png",
-      "../assets/games/graycing/shot-2.png",
-      "../assets/games/graycing/shot-3.png"
-    ],
     controls: ["Keyboard controls are configurable", "Practice in Arcade and Time Trial", "Compete through twelve championships"],
     credits: [["Developer", "Rishabh Jain / Exity"]]
   },
@@ -211,11 +171,6 @@ window.GAME_DATA = [
     release: "31 Jul 2023",
     status: "In development",
     download: "37 MB / 49 MB Android",
-    images: [
-      "https://img.itch.zone/aW1nLzEzMDAwMDI2LmpwZw%3D%3D/original/Icqda%2F.jpg",
-      "https://img.itch.zone/aW1hZ2UvMjAzMzgxMS8xMzAwMDM5Ny5qcGc%3D/347x500/%2BUO2lV.jpg",
-      "https://img.itch.zone/aW1hZ2UvMjAzMzgxMS8xMzk2MTk2Ny5wbmc%3D/347x500/BlOy%2F2.png"
-    ],
     controls: ["Left Mouse — Move", "Hold Right Mouse — Change state", "R — Restart", "Esc — Menu"],
     credits: [["Programming & Development", "Rishabh Jain"], ["Tools & Systems", "Prince Choudhary"], ["Game Design & Sound", "Prothom Pal"], ["Game Art", "Karthik Anil Kumar · Abhishek Patil"]]
   },
@@ -235,11 +190,6 @@ window.GAME_DATA = [
     release: "GMTK Game Jam 2023",
     status: "Released",
     download: "35 MB",
-    images: [
-      "https://img.itch.zone/aW1nLzEyNzUyNzUwLmpwZWc%3D/original/5JSBsU.jpeg",
-      "https://img.itch.zone/aW1hZ2UvMjE2MjU1Mi8xMjc1MjUzOS5wbmc%3D/347x500/9m7Wet.png",
-      "https://img.itch.zone/aW1hZ2UvMjE2MjU1Mi8xMjc1MjUzNy5wbmc%3D/347x500/q4IgAN.png"
-    ],
     controls: ["WASD — Move", "A / D — Rotate or steer", "Space — Begin battle", "R — Restart", "Esc — Menu"],
     credits: [["Programming & Game Design", "Rishabh Jain"], ["Lead Programming", "Prince Choudhary"], ["Game Art", "Sajal Shrivastava · Ayush Sharma"], ["Sound & Level Design", "Prothom Pal"]]
   },
@@ -259,11 +209,6 @@ window.GAME_DATA = [
     release: "QuestCraft 2024",
     status: "Released",
     download: "49 MB",
-    images: [
-      "https://img.itch.zone/aW1hZ2UvMjY3MTM0MC8xNTkyMjM1NC5wbmc%3D/347x500/mIohLK.png",
-      "https://img.itch.zone/aW1hZ2UvMjY3MTM0MC8xNTkyMjM1My5wbmc%3D/347x500/3%2FTOyA.png",
-      "https://img.itch.zone/aW1hZ2UvMjY3MTM0MC8xNTkyMjM1NS5wbmc%3D/347x500/0cP%2FRb.png"
-    ],
     controls: ["A / D — Move", "Space — Jump", "Q — Switch characters", "E — Interact", "W — Pick up / push", "S — Drop"],
     credits: [["Design & Development", "Rishabh Jain"], ["Programming", "Prince Choudhary"], ["Game Art", "Karthik Anil Kumar"]]
   },
@@ -283,10 +228,6 @@ window.GAME_DATA = [
     release: "Built in 2 days",
     status: "Released",
     download: "41 MB",
-    images: [
-      "https://img.itch.zone/aW1hZ2UvMjU2NzIzNS8xNTI3ODY1OC5qcGc%3D/347x500/c7bjYz.jpg",
-      "https://img.itch.zone/aW1hZ2UvMjU2NzIzNS8xNTI3ODY1OS5qcGc%3D/347x500/%2F%2FoD54.jpg"
-    ],
     controls: ["Mouse — Rotate gun", "Drag farther — Increase visible range", "Left Mouse — Shoot", "R — Restart", "Esc — Menu"],
     credits: [["Game Design", "Rishabh Jain"], ["Programming", "Prince Choudhary"], ["Game Art", "Garv Sethi"]]
   },
@@ -306,11 +247,6 @@ window.GAME_DATA = [
     release: "Built in 2 days",
     status: "Released",
     download: "71 MB",
-    images: [
-      "https://img.itch.zone/aW1nLzE0MzkwMzU1LmpwZw%3D%3D/original/XWFPim.jpg",
-      "https://img.itch.zone/aW1hZ2UvMjQyOTc1MC8xNDM5MDE2NS5qcGc%3D/347x500/fnJFbY.jpg",
-      "https://img.itch.zone/aW1hZ2UvMjQyOTc1MC8xNDM4NTIzMy5wbmc%3D/347x500/S1zA2v.png"
-    ],
     controls: ["WASD — Move", "Space — Interact"],
     credits: [["Team arKince", "Karthik Anilkumar · Prince Choudhary · Rishabh Jain"]]
   },
@@ -330,11 +266,6 @@ window.GAME_DATA = [
     release: "Built in 2 days",
     status: "Released",
     download: "33 MB",
-    images: [
-      "https://img.itch.zone/aW1nLzE1Mzk4MTI5LnBuZw%3D%3D/original/%2Bm%2F%2F%2Fu.png",
-      "https://img.itch.zone/aW1hZ2UvMjU4NTcxNi8xNTM5ODExMi5wbmc%3D/347x500/CA0S7f.png",
-      "https://img.itch.zone/aW1hZ2UvMjU4NTcxNi8xNTM5ODExMy5wbmc%3D/347x500/p2hHAY.png"
-    ],
     controls: ["Click — Interact", "Click and hold — Move objects"],
     credits: [["Game Design", "Rishabh Jain"], ["Programming", "Prince Choudhary"], ["Game Art", "Karthik Anilkumar"]]
   },
@@ -354,11 +285,6 @@ window.GAME_DATA = [
     release: "BYOG 2023",
     status: "Released",
     download: "40 MB",
-    images: [
-      "https://img.itch.zone/aW1hZ2UvMjI2NzAwNS8xMzQzNjA4Ni5wbmc%3D/347x500/j5q3tB.png",
-      "https://img.itch.zone/aW1hZ2UvMjI2NzAwNS8xMzg4NTU4MS5wbmc%3D/347x500/nWyRB6.png",
-      "https://img.itch.zone/aW1hZ2UvMjI2NzAwNS8xMzg4NTU5NS5wbmc%3D/347x500/elKWtr.png"
-    ],
     controls: ["A / D — Move", "Space — Jump", "Jump while airborne — Dash forward"],
     credits: [["Programming / Design", "Rishabh Jain"], ["Lead Programming", "Prince Choudhary"], ["Game Design / Sound", "Prothom Pal"], ["Game Art", "Garv Sethi · Akshat Mandal"]]
   },
@@ -378,11 +304,6 @@ window.GAME_DATA = [
     release: "Brackeys Game Jam 2022.2",
     status: "In development",
     download: "22–24 MB",
-    images: [
-      "https://img.itch.zone/aW1hZ2UvMTY4MTMzNi85OTAxMTU1LnBuZw%3D%3D/347x500/Fo%2BNm4.png",
-      "https://img.itch.zone/aW1hZ2UvMTY4MTMzNi85OTAxMTU2LnBuZw%3D%3D/347x500/SBRKbP.png",
-      "https://img.itch.zone/aW1hZ2UvMTY4MTMzNi85OTAxMTY1LnBuZw%3D%3D/347x500/C7AMXb.png"
-    ],
     controls: ["WASD — Move", "E — Teleport", "Staying on the same tile for three moves causes game over"],
     credits: [["Development & Programming", "Rishabh Jain"], ["Art · Design · Music", "Prothom Pal"]]
   },
@@ -402,11 +323,6 @@ window.GAME_DATA = [
     release: "21 Dec 2021",
     status: "Released",
     download: "49–52 MB",
-    images: [
-      "https://img.itch.zone/aW1hZ2UvMTMzMDE4Mi83NzM2MDk5LnBuZw%3D%3D/347x500/q65cz3.png",
-      "https://img.itch.zone/aW1hZ2UvMTMzMDE4Mi83NzM2MTAwLnBuZw%3D%3D/347x500/574g86.png",
-      "https://img.itch.zone/aW1hZ2UvMTMzMDE4Mi83NzM2MTAxLnBuZw%3D%3D/347x500/vPj23D.png"
-    ],
     controls: ["WASD — Move", "E — Interact", "Esc — Pause / Back"],
     credits: [["Development", "Rishabh Jain / Exity"]]
   }
