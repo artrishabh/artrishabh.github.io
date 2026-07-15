@@ -2,6 +2,7 @@ window.GAME_DATA = [
   {
     slug: "squeak-off",
     title: "Squeak Off!",
+    cover: "../assets/games/squeak-off/shot-1.png",
     category: "full",
     categoryLabel: "Full Game",
     genre: "3D Action Brawler",
@@ -16,9 +17,9 @@ window.GAME_DATA = [
     download: "317–338 MB",
     videoId: "wCpRkn7GMN4",
     images: [
-      "https://img.itch.zone/aW1hZ2UvMzg5MTAzNC8yMzcyNDY3Ni5wbmc%3D/347x500/fAxFPb.png",
-      "https://img.itch.zone/aW1hZ2UvMzg5MTAzNC8yMzcyNDY4MC5wbmc%3D/347x500/%2BumCrh.png",
-      "https://img.itch.zone/aW1hZ2UvMzg5MTAzNC8yMzcyNDY3OS5wbmc%3D/347x500/h2HQ9Y.png"
+      "../assets/games/squeak-off/shot-1.png",
+      "../assets/games/squeak-off/shot-2.png",
+      "../assets/games/squeak-off/shot-3.png"
     ],
     controls: ["WASD — Move", "Left Mouse — Shoot", "E — Interact", "Space — Roll", "Q — Use item"],
     credits: [["Game Design", "Rishabh Jain"], ["Development", "Prince Choudhary"], ["Game Art", "Karthik Anil Kumar"]]
@@ -26,6 +27,7 @@ window.GAME_DATA = [
   {
     slug: "entwined-reimagined",
     title: "ENTWINED: Reimagined",
+    cover: "../assets/games/entwined-reimagined/cover.svg",
     category: "full",
     categoryLabel: "Full Game",
     genre: "Narrative Puzzle Platformer",
@@ -49,6 +51,7 @@ window.GAME_DATA = [
   {
     slug: "nodesmith",
     title: "Nodesmith",
+    cover: "../assets/games/nodesmith/shot-1.png",
     category: "full",
     categoryLabel: "Full Game",
     genre: "Puzzle Platformer",
@@ -63,9 +66,9 @@ window.GAME_DATA = [
     download: "33 MB",
     videoId: "gZ14W4phJ0s",
     images: [
-      "https://img.itch.zone/aW1hZ2UvMjk4ODkwMy8xNzg3OTczNi5wbmc%3D/347x500/1I4xKH.png",
-      "https://img.itch.zone/aW1hZ2UvMjk4ODkwMy8xNzg3OTk5NC5wbmc%3D/347x500/%2B5Pgex.png",
-      "https://img.itch.zone/aW1hZ2UvMjk4ODkwMy8xNzg3OTk5NS5wbmc%3D/347x500/aQ6yKL.png"
+      "../assets/games/nodesmith/shot-1.png",
+      "../assets/games/nodesmith/shot-2.png",
+      "../assets/games/nodesmith/shot-3.png"
     ],
     controls: ["Read the dialogue prompts", "Drag and connect nodes", "Use the node graph to control the test subject"],
     credits: [["Game Development & Design", "Rishabh Jain · Prothom Pal"], ["Game Art", "Nandita Agrawal"]]
@@ -73,6 +76,7 @@ window.GAME_DATA = [
   {
     slug: "statescape",
     title: "Statescape",
+    cover: "../assets/games/statescape/cover.svg",
     category: "full",
     categoryLabel: "Full Game",
     genre: "Isometric Puzzle",
@@ -96,6 +100,7 @@ window.GAME_DATA = [
   {
     slug: "netherborne",
     title: "Netherborne",
+    cover: "../assets/games/netherborne/shot-1.png",
     category: "full",
     categoryLabel: "Full Game",
     genre: "Couch Co-op Puzzle Platformer",
@@ -110,9 +115,9 @@ window.GAME_DATA = [
     download: "76 MB",
     videoId: "RnvwLFvkwUE",
     images: [
-      "https://img.itch.zone/aW1hZ2UvMjg2OTQ0Ni8xNzcxNzc4Ny5wbmc%3D/347x500/JJZsDs.png",
-      "https://img.itch.zone/aW1hZ2UvMjg2OTQ0Ni8xNzcxNzc4Ni5wbmc%3D/347x500/qJJtkN.png",
-      "https://img.itch.zone/aW1hZ2UvMjg2OTQ0Ni8xNzcxNzc4OS5wbmc%3D/347x500/%2FUqt1%2F.png"
+      "../assets/games/netherborne/shot-1.png",
+      "../assets/games/netherborne/shot-2.png",
+      "../assets/games/netherborne/shot-3.png"
     ],
     controls: ["Two input devices required", "Best played with one keyboard and one gamepad", "Press Enter on keyboard and Start on gamepad to spawn both characters"],
     credits: [["Programming & Development", "Rishabh Jain"], ["Game Art", "Karthik Anil Kumar"], ["Game Design", "Anubhav Roy"]]
@@ -120,6 +125,7 @@ window.GAME_DATA = [
   {
     slug: "bean-em-all",
     title: "Bean 'Em All",
+    cover: "../assets/games/bean-em-all/shot-1.jpeg",
     category: "full",
     categoryLabel: "Full Game",
     genre: "Bullet Hell Action",
@@ -134,9 +140,9 @@ window.GAME_DATA = [
     download: "58 MB",
     videoId: "O94bNXereZU",
     images: [
-      "https://img.itch.zone/aW1hZ2UvMjg0NzkwOC8xODc5Mzc0OC5qcGVn/347x500/YY%2B4gM.jpeg",
-      "https://img.itch.zone/aW1hZ2UvMjg0NzkwOC8xODc5Mzc0OS5qcGVn/347x500/maiCap.jpeg",
-      "https://img.itch.zone/aW1hZ2UvMjg0NzkwOC8xODc5Mzc0Ny5qcGVn/347x500/AzlbXY.jpeg"
+      "../assets/games/bean-em-all/shot-1.jpeg",
+      "../assets/games/bean-em-all/shot-2.jpeg",
+      "../assets/games/bean-em-all/shot-3.jpeg"
     ],
     controls: ["WASD — Move", "Hold and release Left Mouse — Aim and shoot", "Space — Dash", "Attack adjacent enemies to trigger a Bean-Reaction"],
     credits: [["Game Design", "Rishabh Jain"], ["Game Development", "Prince Choudhary"], ["Game Art", "Karthik Anil Kumar"]]
@@ -144,6 +150,7 @@ window.GAME_DATA = [
   {
     slug: "overryder",
     title: "OverRyder",
+    cover: "../assets/games/overryder/cover.svg",
     category: "full",
     categoryLabel: "Full Game",
     genre: "Action",
@@ -167,6 +174,7 @@ window.GAME_DATA = [
   {
     slug: "graycing",
     title: "Graycing",
+    cover: "../assets/games/graycing/shot-1.png",
     category: "full",
     categoryLabel: "Full Game",
     genre: "Arcade Racing",
@@ -180,9 +188,9 @@ window.GAME_DATA = [
     status: "Released",
     download: "74 MB",
     images: [
-      "https://img.itch.zone/aW1nLzU3NjI5NzUucG5n/original/HbC6J%2B.png",
-      "https://img.itch.zone/aW1hZ2UvMTAxMTQ1OS81NzYyOTAzLnBuZw%3D%3D/347x500/h3%2FFdf.png",
-      "https://img.itch.zone/aW1hZ2UvMTAxMTQ1OS81NzYyOTA0LnBuZw%3D%3D/347x500/7Q4IPN.png"
+      "../assets/games/graycing/shot-1.png",
+      "../assets/games/graycing/shot-2.png",
+      "../assets/games/graycing/shot-3.png"
     ],
     controls: ["Keyboard controls are configurable", "Practice in Arcade and Time Trial", "Compete through twelve championships"],
     credits: [["Developer", "Rishabh Jain / Exity"]]
@@ -190,6 +198,7 @@ window.GAME_DATA = [
   {
     slug: "statescape-jam",
     title: "Statescape Jam",
+    cover: "../assets/games/statescape-jam/cover.svg",
     category: "jam",
     categoryLabel: "Game Jam",
     genre: "Isometric Puzzle",
@@ -213,6 +222,7 @@ window.GAME_DATA = [
   {
     slug: "something-fishy",
     title: "Something Fishy",
+    cover: "../assets/games/something-fishy/cover.svg",
     category: "jam",
     categoryLabel: "Game Jam",
     genre: "Adventure / Tower Defence",
@@ -236,6 +246,7 @@ window.GAME_DATA = [
   {
     slug: "paws-n-claws",
     title: "Paws n Claws",
+    cover: "../assets/games/paws-n-claws/cover.svg",
     category: "jam",
     categoryLabel: "Game Jam",
     genre: "Puzzle Platformer",
@@ -259,6 +270,7 @@ window.GAME_DATA = [
   {
     slug: "gun-it",
     title: "Gun-It",
+    cover: "../assets/games/gun-it/cover.svg",
     category: "jam",
     categoryLabel: "Game Jam",
     genre: "Math Platformer",
@@ -281,6 +293,7 @@ window.GAME_DATA = [
   {
     slug: "nezumi",
     title: "Nezumi",
+    cover: "../assets/games/nezumi/cover.svg",
     category: "jam",
     categoryLabel: "Game Jam",
     genre: "Adventure",
@@ -304,6 +317,7 @@ window.GAME_DATA = [
   {
     slug: "fortune-smiles-upon-you",
     title: "Fortune Smiles Upon You",
+    cover: "../assets/games/fortune-smiles-upon-you/cover.svg",
     category: "jam",
     categoryLabel: "Game Jam",
     genre: "Point-and-Click Puzzle",
@@ -327,6 +341,7 @@ window.GAME_DATA = [
   {
     slug: "entwined",
     title: "Entwined",
+    cover: "../assets/games/entwined/cover.svg",
     category: "jam",
     categoryLabel: "Game Jam",
     genre: "Puzzle Platformer",
@@ -350,6 +365,7 @@ window.GAME_DATA = [
   {
     slug: "divine-darkness",
     title: "Divine Darkness",
+    cover: "../assets/games/divine-darkness/cover.svg",
     category: "jam",
     categoryLabel: "Game Jam",
     genre: "Top-Down Puzzle",
@@ -373,6 +389,7 @@ window.GAME_DATA = [
   {
     slug: "project-xmas",
     title: "Project Xmas",
+    cover: "../assets/games/project-xmas/cover.svg",
     category: "prototype",
     categoryLabel: "Prototype",
     genre: "First-Person Horror",

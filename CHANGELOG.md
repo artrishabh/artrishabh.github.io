@@ -1,5 +1,14 @@
 # Changelog
 
+## Image reliability and Technical Art cleanup
+
+- Temporarily removed the Technical Art articles and breakdowns area.
+- Added local screenshots for Squeak Off, Nodesmith, Netherborne, Bean 'Em All, and Graycing.
+- Added local project covers for every other catalogue entry.
+- Stopped using remote itch.io images for homepage cards, catalogue covers, related-game cards, and game-page heroes.
+- Added automatic fallback artwork when a remote gallery screenshot is blocked or unavailable.
+- Updated cache versions for game CSS and JavaScript files.
+
 ## Portfolio expansion
 
 - Added Technical Art showreels from YouTube.
