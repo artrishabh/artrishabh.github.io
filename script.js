@@ -134,7 +134,7 @@ updateActiveSection();
 // Load selected-game artwork from local asset folders. Add either cover.* or shot-1.*
 // to assets/games/<game-slug>/ and the homepage card updates automatically.
 (() => {
-  const extensions = ['webp', 'png', 'jpg', 'jpeg', 'avif'];
+  const extensions = ['webp', 'png', 'jpg', 'jpeg', 'avif', 'svg'];
 
   const probeFirstAvailable = (candidates) => new Promise((resolve) => {
     let index = 0;
@@ -153,10 +153,19 @@ updateActiveSection();
   });
 
   document.querySelectorAll('[data-game-image]').forEach(async (card) => {
+    const cover = card.querySelector('.game-card-cover');
+    if (!cover) return;
+
     const slug = card.dataset.gameImage;
     const stems = ['cover', 'shot-1'];
     const candidates = stems.flatMap((stem) => extensions.map((extension) => `assets/games/${slug}/${stem}.${extension}`));
     const source = await probeFirstAvailable(candidates);
-    if (source) card.style.setProperty('--game-image', `url("${source}")`);
+
+    if (source) {
+      cover.src = source;
+      cover.classList.remove('is-missing');
+    } else {
+      cover.classList.add('is-missing');
+    }
   });
 })();

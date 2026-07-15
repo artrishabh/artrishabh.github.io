@@ -21,7 +21,7 @@
   <script src="cozy-theme.js"></script>
   <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="stylesheet" href="portfolio-expansion.css?v=3" />
-  <link rel="stylesheet" href="cozy-theme.css?v=2" />
+  <link rel="stylesheet" href="cozy-theme.css?v=3" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -75,12 +75,11 @@
     <main id="main-content">
       <section class="section hero" id="home" data-section="home">
         <div class="hero-atmosphere" aria-hidden="true">
-          <div class="light-beam"></div>
-          <div class="terrain terrain-one"></div>
-          <div class="terrain terrain-two"></div>
-          <div class="hero-orb"></div>
-          <div class="hero-crosshair crosshair-one"></div>
-          <div class="hero-crosshair crosshair-two"></div>
+          <div class="hero-sun"></div>
+          <div class="hero-cloud hero-cloud-one"></div>
+          <div class="hero-cloud hero-cloud-two"></div>
+          <div class="hero-cloud hero-cloud-three"></div>
+          <div class="hero-ground"></div>
         </div>
 
         <div class="section-inner hero-content">
@@ -196,23 +195,23 @@
           <div class="showreel-grid">
             <article class="showreel-card reveal">
               <div class="showreel-frame">
-                <iframe src="https://www.youtube-nocookie.com/embed/natRY3xAdOA" title="Technical art showreel 01" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/natRY3xAdOA" title="Looney Tunes Production VFX Showreel" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div class="showreel-copy">
                 <p class="card-kicker">Showreel 01</p>
-                <h3>Technical Art Showreel</h3>
-                <p>A visual overview of real-time effects, shaders, tools, and game-production work.</p>
+                <h3>Looney Tunes Production VFX Showreel</h3>
+                <p>Check out some VFX work I did in Looney Tunes: World of Mayhem during my internship at Scopely.</p>
               </div>
             </article>
 
             <article class="showreel-card reveal">
               <div class="showreel-frame">
-                <iframe src="https://www.youtube-nocookie.com/embed/FI8Idul6PKU" title="Technical art showreel 02" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/FI8Idul6PKU" title="Technical Art Showreel 2025" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div class="showreel-copy">
                 <p class="card-kicker">Showreel 02</p>
-                <h3>Game Development Showreel</h3>
-                <p>A broader collection of gameplay, interactive systems, and completed game projects.</p>
+                <h3>Technical Art Showreel 2025</h3>
+                <p>Check out some of the VFX, shaders, and tools work I did on personal projects.</p>
               </div>
             </article>
           </div>
@@ -231,26 +230,32 @@
 
           <div class="games-grid">
             <a class="game-card game-squeak-off reveal" data-game-image="squeak-off" href="games/squeak-off.html" aria-label="Open Squeak Off game page">
+              <img class="game-card-cover" src="assets/games/squeak-off/shot-1.png" alt="Squeak Off gameplay cover" width="960" height="540" loading="lazy" decoding="async" />
               <div class="game-index">01</div>
               <div class="game-info"><p>3D Action Brawler · Unity</p><h3>Squeak Off!</h3><span>Game Designer</span><b>View game page →</b></div>
             </a>
             <a class="game-card game-nodesmith reveal" data-game-image="nodesmith" href="games/nodesmith.html" aria-label="Open Nodesmith game page">
+              <img class="game-card-cover" src="assets/games/nodesmith/shot-1.png" alt="Nodesmith gameplay cover" width="960" height="540" loading="lazy" decoding="async" />
               <div class="game-index">02</div>
               <div class="game-info"><p>Puzzle Platformer · Unity</p><h3>Nodesmith</h3><span>Game Developer & Designer</span><b>View game page →</b></div>
             </a>
             <a class="game-card game-netherborne reveal" data-game-image="netherborne" href="games/netherborne.html" aria-label="Open Netherborne game page">
+              <img class="game-card-cover" src="assets/games/netherborne/shot-1.png" alt="Netherborne gameplay cover" width="960" height="540" loading="lazy" decoding="async" />
               <div class="game-index">03</div>
               <div class="game-info"><p>Couch Co-op Platformer</p><h3>Netherborne</h3><span>Programming & Development</span><b>View game page →</b></div>
             </a>
             <a class="game-card game-statescape reveal" data-game-image="statescape" href="games/statescape.html" aria-label="Open Statescape game page">
+              <img class="game-card-cover" src="assets/games/statescape/cover.svg" alt="Statescape game cover" width="960" height="540" loading="lazy" decoding="async" />
               <div class="game-index">04</div>
               <div class="game-info"><p>Isometric Puzzle · Unity</p><h3>Statescape</h3><span>Programming & Development</span><b>View game page →</b></div>
             </a>
             <a class="game-card game-bean reveal" data-game-image="bean-em-all" href="games/bean-em-all.html" aria-label="Open Bean Em All game page">
+              <img class="game-card-cover" src="assets/games/bean-em-all/shot-1.jpeg" alt="Bean Em All gameplay cover" width="960" height="540" loading="lazy" decoding="async" />
               <div class="game-index">05</div>
               <div class="game-info"><p>Action · Bullet Hell</p><h3>Bean 'Em All</h3><span>Game Designer</span><b>View game page →</b></div>
             </a>
             <a class="game-card game-graycing reveal" data-game-image="graycing" href="games/graycing.html" aria-label="Open Graycing game page">
+              <img class="game-card-cover" src="assets/games/graycing/shot-1.png" alt="Graycing gameplay cover" width="960" height="540" loading="lazy" decoding="async" />
               <div class="game-index">06</div>
               <div class="game-info"><p>Arcade Racing · Unity</p><h3>Graycing</h3><span>Developer</span><b>View game page →</b></div>
             </a>
@@ -271,11 +276,21 @@
           <div class="reveal">
             <p class="eyebrow">One-page overview</p>
             <h2>Resume</h2>
-            <p class="resume-copy">The final PDF will live here. This section also gives recruiters a quick scan of your strongest technical areas before they download anything.</p>
+            <p class="resume-copy">Check out my resume to know more about me.</p>
             <div class="skill-clusters" aria-label="Core skill areas">
               <span>Technical Art</span><span>Maya Tools</span><span>VFX</span><span>Lua</span><span>Jenkins</span><span>Git / GitHub</span><span>Asset Pipelines</span>
             </div>
-            <span class="button button-primary disabled-link" aria-disabled="true">Resume PDF coming next</span>
+            <a
+              class="button button-primary"
+              href="assets/Rishabh_Jain_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open Resume
+            </a>
+
+
+
           </div>
           <div class="resume-paper reveal" aria-label="Resume preview placeholder">
             <div class="paper-head"><strong>Rishabh Jain</strong><span>Technical Artist & Game Developer</span></div>
@@ -309,6 +324,6 @@
 
   <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
   <noscript><p class="noscript-note">JavaScript is disabled. The portfolio content still works, but active navigation and subtle motion are unavailable.</p></noscript>
-  <script src="script.js?v=5" defer></script>
+  <script src="script.js?v=6" defer></script>
 </body>
 </html>

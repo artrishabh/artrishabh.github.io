@@ -1,5 +1,16 @@
 # Changelog
 
+## Final responsive polish
+
+- Fixed the Squeak Off homepage cover by rendering local covers as real image elements above the fallback layer.
+- Rebuilt the hero illustration with one sun, three small clouds, and a single green ground.
+- Added height-aware and width-aware hero sizing so the full introduction and scroll cue remain visible at common laptop sizes and 125% browser scaling.
+- Added an earlier compact-sidebar breakpoint for smaller desktop viewports.
+- Updated both Technical Art showreel titles and descriptions.
+- Simplified the Resume introduction copy.
+- Added responsive sizing improvements to standalone game pages.
+- Kept reduced-motion behavior and local-image fallbacks intact.
+
 ## Cozy interaction polish
 
 - Made the home-page scroll cue larger, clickable, and animated.
