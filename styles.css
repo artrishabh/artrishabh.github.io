@@ -208,21 +208,12 @@ h3 { font-size: 1.45rem; letter-spacing: -0.03em; }
 .game-info p { margin: 0 0 6px; color: var(--accent); font-size: .67rem; text-transform: uppercase; letter-spacing: .1em; }
 .game-info h3 { font-size: 1.7rem; margin: 0 0 7px; }
 .game-info span { color: #9da7ad; font-size: .78rem; }
-/* Local artwork for the featured game cards. */
-.game-squeak-off { --game-bg: url("assets/games/squeak-off/shot-1.png") center / cover no-repeat; }
-.game-nodesmith { --game-bg: url("assets/games/nodesmith/shot-1.png") center / cover no-repeat; }
-.game-netherborne { --game-bg: url("assets/games/netherborne/shot-1.png") center / cover no-repeat; }
-.game-graycing { --game-bg: url("assets/games/graycing/shot-1.png") center / cover no-repeat; }
-.game-bean-em-all { --game-bg: url("assets/games/bean-em-all/shot-1.jpeg") center / cover no-repeat; }
-.game-card:nth-child(5) { grid-column: span 4; }
-
-@media (max-width: 980px) {
-  .game-card:nth-child(5) { grid-column: span 6; }
-}
-
-@media (max-width: 720px) {
-  .game-card:nth-child(5) { grid-column: auto; }
-}
+.game-nodesmith { --game-bg: radial-gradient(circle at 70% 28%, rgba(82,179,170,.48), transparent 22%), linear-gradient(145deg, #142b2b, #10151a 58%, #090b0d); }
+.game-netherborne { --game-bg: radial-gradient(circle at 70% 27%, rgba(186,70,45,.45), transparent 24%), linear-gradient(145deg, #331713, #171112 60%, #090a0b); }
+.game-statescape { --game-bg: radial-gradient(circle at 62% 34%, rgba(61,134,193,.48), transparent 22%), linear-gradient(135deg, #102738, #12171e 58%, #090b0d); }
+.game-bean { --game-bg: radial-gradient(circle at 70% 30%, rgba(225,185,70,.5), transparent 23%), linear-gradient(140deg, #3b2a13, #171513 56%, #090a0b); }
+.game-overryder { --game-bg: radial-gradient(circle at 63% 25%, rgba(201,61,91,.48), transparent 22%), linear-gradient(145deg, #2e1022, #17111a 62%, #090a0b); }
+.game-graycing { --game-bg: radial-gradient(circle at 68% 30%, rgba(255,255,255,.25), transparent 23%), linear-gradient(145deg, #303235, #151719 58%, #08090a); }
 
 .resume-section { background: linear-gradient(145deg, #0b1013, #07090b); }
 .resume-layout { display: grid; grid-template-columns: 1fr .8fr; gap: clamp(60px, 10vw, 140px); align-items: center; }

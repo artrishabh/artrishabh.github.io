@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="portfolio-expansion.css?v=1" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -47,9 +48,16 @@
         <span>Technical Art<br /></span>
       </div>
 
-      <div class="sidebar-footer">
-        <a href="https://github.com/artrishabh" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://exity.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
+      <div class="sidebar-footer social-icons" aria-label="Social links">
+        <a class="social-icon" href="https://github.com/artrishabh" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.75.41-1.27.74-1.56-2.57-.29-5.27-1.29-5.27-5.72 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.17 1.19a10.98 10.98 0 0 1 5.77 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.6.23 2.78.11 3.07.74.81 1.19 1.84 1.19 3.11 0 4.44-2.71 5.42-5.29 5.71.42.36.79 1.06.79 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
+        </a>
+        <a class="social-icon" href="https://exity.itch.io/" target="_blank" rel="noreferrer" aria-label="itch.io" title="itch.io">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.1 2.5 1.4 5.8v2.4c0 1.5 1 2.7 2.4 3v8.2c0 1.2 1 2.1 2.1 2.1h12.2c1.2 0 2.1-1 2.1-2.1v-8.2c1.4-.3 2.4-1.5 2.4-3V5.8l-1.7-3.3H3.1Zm3.8 12.1h3.2v-2.3h3.8v2.3h3.2v3.3H6.9v-3.3Z"/></svg>
+        </a>
+        <a class="social-icon" href="https://in.linkedin.com/in/rishabh-jain1717" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 7.8H1.8V22h3.5V7.8ZM3.5 2A2.1 2.1 0 1 0 3.5 6.2 2.1 2.1 0 0 0 3.5 2ZM22.2 13.8c0-4.3-2.3-6.3-5.4-6.3-2.5 0-3.6 1.4-4.2 2.3v-2H9.1V22h3.5v-7c0-1.8.4-3.6 2.7-3.6 2.3 0 2.3 2.1 2.3 3.7V22h3.5v-8.2h1.1Z"/></svg>
+        </a>
       </div>
     </aside>
 
@@ -101,7 +109,7 @@
             <article class="timeline-item reveal">
               <div class="timeline-marker"></div>
               <div class="experience-logo-wrap">
-                <img class="experience-logo experience-logo--scopely" src="assets/images/scopely-logo.png" alt="Scopely logo" width="184" height="184" />
+                <img class="experience-logo experience-logo--scopely" src="assets/images/scopely-logo.png" alt="Scopely logo" width="96" height="96" />
               </div>
               <div class="timeline-content">
                 <div class="experience-heading">
@@ -114,9 +122,9 @@
                 </div>
                 <p class="role-note"><b>Looney Tunes World of Mayhem</b></p>
                 <ul>
-                  <li><b>VFX & Pipeline Management :</b> Main VFX Artist for Toon VFX in Looney Tunes Art. Managed character assets ("toons") releases and asset bundles for same game's art pipeline within a waterfall production. Enforced strict pipeline standards across the art department, mentoring them on best practices for optimized delivarables and ensured proper github review to maintain branch health</li>
-                  <li><b>Tool Development : </b>Authored custom Maya rigging tools that optimized internal rigging workflow, directly reducing reliance on external vendors and lowering overall costing. Made some photoshop automation scripts enhancing the manual iterative work of 2D Artists</li>
-                  <li><b>Workflow Optimization :</b> Diagnosed and resolved a legacy text rendering issue, removing pipeline bottlenecks, saving animators a full day of manual work</li> 
+                  <li><b>VFX &amp; Pipeline Management:</b> Main VFX Artist for Toon VFX in Looney Tunes Art. Managed character asset ("toon") releases and asset bundles for the game's art pipeline within waterfall production. Enforced pipeline standards across the art department, mentored artists on optimized deliverables, and reviewed GitHub pull requests to maintain branch health.</li>
+                  <li><b>Tool Development:</b> Authored custom Maya rigging tools that optimized internal rigging workflows, reduced reliance on external vendors, and lowered production costs. Also created Photoshop automation scripts to reduce repetitive work for 2D artists.</li>
+                  <li><b>Workflow Optimization:</b> Diagnosed and resolved a legacy text-rendering issue, removing a pipeline bottleneck and saving animators a full day of manual work.</li>
                 </ul>
                 <div class="impact-row" aria-label="Technologies used">
                   <span>Realtime VFX</span><span>Shaders</span><span>DCC Tools</span><span>Asset Pipeline Optimization</span><span>Asset Integration</span><span>Git Management</span>
@@ -129,7 +137,7 @@
               <div class="experience-logo-wrap">
                 <picture>
                   <source srcset="assets/images/overdare-logo.webp" type="image/webp" />
-                  <img class="experience-logo experience-logo--overdare" src="assets/images/overdare-logo.png" alt="OVERDARE logo" width="512" height="512" />
+                  <img class="experience-logo experience-logo--overdare" src="assets/images/overdare-logo.png" alt="OVERDARE logo" width="96" height="96" />
                 </picture>
               </div>
               <div class="timeline-content">
@@ -143,9 +151,9 @@
                 </div>
                 <p class="role-note">Three Multiplayer Games</p>
                 <ul>
-                  <li>Developed and Released three multiplayer Games on OVERDARE platform by Krafton, a user generated content game platform</li>
-                  <li>Worked on contract directly from OVERDARE developer to expand their game catalogue    </li>
-                  <li>Built multiplayer game systems using Lua and OVERDARE's Engine</li>
+                  <li>Developed and released three multiplayer games on OVERDARE by Krafton, a user-generated-content game platform.</li>
+                  <li>Worked directly with the OVERDARE developer team on contract to expand the platform's game catalogue.</li>
+                  <li>Built multiplayer gameplay systems using Lua and the OVERDARE engine.</li>
                 </ul>
                 <div class="impact-row" aria-label="Project outcomes and technologies">
                   <span>UGC Games</span><span>Lua</span><span>Three Multiplayer Games</span>
@@ -166,48 +174,39 @@
             <p>Check various different Technical Art Projects and Contributions I have Made</p>
           </div>
 
-          <div class="feature-grid">
-            <article class="feature-card feature-card-large reveal">
-              <div class="card-visual rig-visual" aria-hidden="true">
-                <div class="visual-label">COOL STUFF 01</div>
-                <div class="rig-joint j1"></div><div class="rig-joint j2"></div><div class="rig-joint j3"></div>
-                <div class="rig-line l1"></div><div class="rig-line l2"></div>
+          <div class="showreel-grid">
+            <article class="showreel-card reveal">
+              <div class="showreel-frame">
+                <iframe src="https://www.youtube-nocookie.com/embed/natRY3xAdOA" title="Technical art showreel 01" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
-              <div class="card-body">
-                <div class="card-topline"><p class="card-kicker">Tool Development</p><span>Featured</span></div>
-                <h3>Maya rigging workflow tools</h3>
-                <p>Show the production problem, tool interface, before-and-after workflow, and measurable budget or time impact.</p>
-                <div class="case-study-flow" aria-label="Suggested case study structure">
-                  <span>Problem</span><i></i><span>Tool</span><i></i><span>Impact</span>
-                </div>
-                <div class="tag-row"><span>Maya</span><span>Python / MEL</span><span>Rigging</span></div>
+              <div class="showreel-copy">
+                <p class="card-kicker">Showreel 01</p>
+                <h3>Technical Art Showreel</h3>
+                <p>A visual overview of real-time effects, shaders, tools, and game-production work.</p>
               </div>
             </article>
 
-            <article class="feature-card reveal">
-              <div class="card-visual pipeline-visual" aria-hidden="true">
-                <div class="visual-label">COOL STUFF 02</div>
-                <span>ART</span><i></i><span>VALIDATE</span><i></i><span>BUILD</span>
+            <article class="showreel-card reveal">
+              <div class="showreel-frame">
+                <iframe src="https://www.youtube-nocookie.com/embed/FI8Idul6PKU" title="Technical art showreel 02" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
-              <div class="card-body">
-                <p class="card-kicker">Pipeline</p>
-                <h3>Asset validation & releases</h3>
-                <p>Document asset-bundle checks, automated releases, failure prevention, and support for artists.</p>
-                <div class="tag-row"><span>Jenkins</span><span>Asset Bundles</span><span>Git</span></div>
+              <div class="showreel-copy">
+                <p class="card-kicker">Showreel 02</p>
+                <h3>Game Development Showreel</h3>
+                <p>A broader collection of gameplay, interactive systems, and completed game projects.</p>
               </div>
             </article>
+          </div>
 
-            <article class="feature-card reveal">
-              <div class="card-visual vfx-visual" aria-hidden="true">
-                <div class="visual-label">COOL STUFF 03</div><div></div><div></div><div></div>
-              </div>
-              <div class="card-body">
-                <p class="card-kicker">Production VFX</p>
-                <h3>Game-ready visual effects</h3>
-                <p>Add breakdown videos, effect layers, optimization notes, production constraints, and your exact contribution.</p>
-                <div class="tag-row"><span>VFX</span><span>Unity</span><span>Optimization</span></div>
-              </div>
-            </article>
+          <div class="ta-library reveal">
+            <div class="ta-library-head">
+              <h3>Articles &amp; Breakdowns</h3>
+              <p>This area is ready for future tool write-ups, shader breakdowns, VFX case studies, and pipeline-development posts.</p>
+            </div>
+            <div class="article-placeholder-grid">
+              <article class="article-placeholder"><span>Future case study</span><h4>Tool or pipeline breakdown</h4><p>Add the problem, process, technical decisions, images, and measurable production impact.</p></article>
+              <article class="article-placeholder"><span>Future article</span><h4>Shader, VFX, or workflow post</h4><p>Add videos, node graphs, performance notes, limitations, and downloadable examples.</p></article>
+            </div>
           </div>
         </div>
       </section>
@@ -223,25 +222,29 @@
           </div>
 
           <div class="games-grid">
-            <a class="game-card game-squeak-off reveal" href="games/squeak-off.html" aria-label="Open Squeak Off! project page">
+            <a class="game-card game-squeak-off reveal" href="games/squeak-off.html" aria-label="Open Squeak Off game page">
               <div class="game-index">01</div>
               <div class="game-info"><p>3D Action Brawler · Unity</p><h3>Squeak Off!</h3><span>Game Designer</span><b>View game page →</b></div>
             </a>
-            <a class="game-card game-nodesmith reveal" href="games/nodesmith.html" aria-label="Open Nodesmith project page">
+            <a class="game-card game-nodesmith reveal" href="games/nodesmith.html" aria-label="Open Nodesmith game page">
               <div class="game-index">02</div>
               <div class="game-info"><p>Puzzle Platformer · Unity</p><h3>Nodesmith</h3><span>Game Developer & Designer</span><b>View game page →</b></div>
             </a>
-            <a class="game-card game-netherborne reveal" href="games/netherborne.html" aria-label="Open Netherborne project page">
+            <a class="game-card game-netherborne reveal" href="games/netherborne.html" aria-label="Open Netherborne game page">
               <div class="game-index">03</div>
               <div class="game-info"><p>Couch Co-op Platformer</p><h3>Netherborne</h3><span>Programming & Development</span><b>View game page →</b></div>
             </a>
-            <a class="game-card game-graycing reveal" href="games/graycing.html" aria-label="Open Graycing project page">
+            <a class="game-card game-statescape reveal" href="games/statescape.html" aria-label="Open Statescape game page">
               <div class="game-index">04</div>
-              <div class="game-info"><p>Arcade Racing · Unity</p><h3>Graycing</h3><span>Solo Developer</span><b>View game page →</b></div>
+              <div class="game-info"><p>Isometric Puzzle · Unity</p><h3>Statescape</h3><span>Programming & Development</span><b>View game page →</b></div>
             </a>
-            <a class="game-card game-bean-em-all reveal" href="games/bean-em-all.html" aria-label="Open Bean 'Em All project page">
+            <a class="game-card game-bean reveal" href="games/bean-em-all.html" aria-label="Open Bean Em All game page">
               <div class="game-index">05</div>
               <div class="game-info"><p>Action · Bullet Hell</p><h3>Bean 'Em All</h3><span>Game Designer</span><b>View game page →</b></div>
+            </a>
+            <a class="game-card game-graycing reveal" href="games/graycing.html" aria-label="Open Graycing game page">
+              <div class="game-index">06</div>
+              <div class="game-info"><p>Arcade Racing · Unity</p><h3>Graycing</h3><span>Developer</span><b>View game page →</b></div>
             </a>
           </div>
         </div>
@@ -277,8 +280,8 @@
             <p>Looking for technical-art, tools, pipeline, game-development, or collaborative project opportunities.</p>
           </div>
           <div class="contact-links reveal">
-            <a href="mailto:your-email@example.com"><span>Email</span><strong>Replace with your email ↗</strong></a>
-            <a href="https://www.linkedin.com/in/rishabh-jain-230999252" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>Connect with me ↗</strong></a>
+            <a href="mailto:rjainzx@gmail.com"><span>Email</span><strong>rjainzx@gmail.com ↗</strong></a>
+            <a href="https://in.linkedin.com/in/rishabh-jain1717" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>Connect with me ↗</strong></a>
             <a href="https://github.com/artrishabh" target="_blank" rel="noreferrer"><span>GitHub</span><strong>View my code ↗</strong></a>
             <a href="https://exity.itch.io/" target="_blank" rel="noreferrer"><span>itch.io</span><strong>Play my games ↗</strong></a>
           </div>
