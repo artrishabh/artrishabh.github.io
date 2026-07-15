@@ -156,25 +156,6 @@ window.GAME_DATA = [
     credits: [["Developer", "Rishabh Jain / Exity"]]
   },
   {
-    slug: "statescape-jam",
-    title: "Statescape Jam",
-    cover: "../assets/games/statescape-jam/cover.svg",
-    category: "jam",
-    categoryLabel: "Game Jam",
-    genre: "Isometric Puzzle",
-    tagline: "The original jam version of Statescape, built around breathing and state-changing powers.",
-    description: "Move an intelligent alien ice cube through laboratory puzzles by consuming limited air and changing state to pass through different wall materials.",
-    itch: "https://exity.itch.io/statescapejam",
-    role: "Programming & Development",
-    platforms: "Windows · Android",
-    engine: "Unity · Aseprite · Photoshop · Audacity",
-    release: "31 Jul 2023",
-    status: "In development",
-    download: "37 MB / 49 MB Android",
-    controls: ["Left Mouse — Move", "Hold Right Mouse — Change state", "R — Restart", "Esc — Menu"],
-    credits: [["Programming & Development", "Rishabh Jain"], ["Tools & Systems", "Prince Choudhary"], ["Game Design & Sound", "Prothom Pal"], ["Game Art", "Karthik Anil Kumar · Abhishek Patil"]]
-  },
-  {
     slug: "something-fishy",
     title: "Something Fishy",
     cover: "../assets/games/something-fishy/cover.svg",
