@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Shader Graph Named Reroute",
+    "slug": "shader-graph-named-reroute",
+    "category": "Unity Tool, Shader Graph",
+    "excerpt": "A Unreal Engine like named reroute custom node for Unity Shader Graph.",
+    "tags": [
+      "Unity Tools",
+      "Shader Graph"
+    ],
+    "date": "2026-08-24",
+    "published": true,
+    "cover": "cover.png"
+  }
+]

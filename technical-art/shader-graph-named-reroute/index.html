@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A Unreal Engine like named reroute custom node for Unity Shader Graph." />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Shader Graph Named Reroute | Rishabh Jain" />
+  <meta property="og:description" content="A Unreal Engine like named reroute custom node for Unity Shader Graph." />
+  <meta property="og:url" content="https://artrishabh.github.io/technical-art/shader-graph-named-reroute/" />
+  <link rel="canonical" href="https://artrishabh.github.io/technical-art/shader-graph-named-reroute/" />
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+  <title>Shader Graph Named Reroute | Rishabh Jain</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../portfolio-expansion.css" />
+  <link rel="stylesheet" href="../../cozy-theme.css" />
+  <link rel="stylesheet" href="../post.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1WKTNNL25R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1WKTNNL25R');
+  </script>
+</head>
+<body class="ta-article-page">
+  <main class="ta-article-shell">
+    <a class="ta-back" href="../../#technical-art">
+      <span aria-hidden="true">&larr;</span>
+      Technical Art
+    </a>
+
+    <header class="ta-article-hero">
+      <p class="ta-kicker">Unity Tool, Shader Graph</p>
+      <h1>Shader Graph Named Reroute</h1>
+      <p class="ta-article-lede">A Unreal Engine like named reroute custom node for Unity Shader Graph.</p>
+      <div class="ta-meta-row">
+        <span>2026-08-24</span>
+      </div>
+      <div class="ta-tag-row"><span>Unity Tools</span><span>Shader Graph</span></div>
+      <div class="ta-hero-actions"></div>
+    </header>
+
+    <section class="ta-demo-wrap" aria-label="Project demo">
+      <div class="ta-demo-frame">
+        <video controls preload="metadata" playsinline>
+          <source src="../../assets/technical-art/shader-graph-named-reroute/demo.mp4">
+        </video>
+      </div>
+    </section>
+
+    <div class="ta-content-grid">
+    <section class="ta-article-block">
+      <p class="ta-kicker">Overview</p>
+      <div class="ta-prose"><p>I really liked the Named Reroute feature in Unreal Engine&#39;s material graph and was surprised Unity Shader Graph didnt have a direct equivalent. So I built a small editor utility that adds two custom nodes: Declare Reroute and Use Reroute. You can name a value once and access it elsewhere in the graph without dragging long wires across everything</p></div>
+    </section>
+    <section class="ta-article-block">
+      <p class="ta-kicker">The problem</p>
+      <div class="ta-prose"><p>Large Shader Graphs can quickly become difficult to read when values need to be reused across different parts of the graph, especially when long connection wires cross multiple node groups. The Named Reroute tool solves this by letting you declare a value with a name and reuse it elsewhere through a matching Usage node. This keeps the graph cleaner and makes important values easier to identify at a glance. It’s especially useful for commonly reused data such as masks, normals, UVs, depth values, Fresnel results, or any intermediate calculation that needs to be referenced in multiple places.</p></div>
+    </section>
+    <section class="ta-article-block">
+      <p class="ta-kicker">How I built it</p>
+      <div class="ta-prose"><p>I created the tool as a small Unity Editor extension for Shader Graph, adding two custom nodes: Declare Reroute and Use Reroute. The Declaration node stores a name and accepts a Shader Graph value, while Usage nodes with the same name are linked back to it internally. The tool keeps the actual graph dependency intact but hides the long connection between them. Most of the work involved interacting with Shader Graph’s node/slot system, handling dynamic value types, keeping names synchronized, and working around some of Unity’s internal Shader Graph APIs.</p></div>
+    </section>
+    <section class="ta-article-block">
+      <p class="ta-kicker">Usage</p>
+      <div class="ta-prose"><ol>
+<li>In Shader Graph, open Create Node → ArtRishabh → Named Reroute.</li>
+<li>Add a Declaration node and connect the value you want to reuse.</li>
+<li>Give the Declaration a name, for example FoamMask.</li>
+<li>Add a Usage node somewhere else in the graph.</li>
+<li>Select/type the same reroute name.</li>
+<li>Connect the Usage output wherever that value is needed.</li>
+<li>One Declaration can be reused by multiple Usage nodes, which helps keep large graphs much cleaner.</li>
+</ol></div>
+    </section>
+
+
+    </div>
+
+    <section class="ta-gallery-wrap">
+      <p class="ta-kicker">Gallery</p>
+      <h2>Project images</h2>
+      <div class="ta-gallery" data-gallery-root></div>
+    </section>
+  </main>
+
+  <script src="../../cozy-theme.js"></script>
+
+  <script>
+  (() => {
+    const root = document.querySelector('[data-gallery-root]');
+    if (!root) return;
+
+    const extensions = ['webp', 'png', 'jpg', 'jpeg', 'avif'];
+
+    for (let i = 1; i <= 20; i++) {
+      const figure = document.createElement('figure');
+      const img = document.createElement('img');
+
+      img.alt = 'Shader Graph Named Reroute screenshot ' + i;
+      img.loading = 'lazy';
+
+      figure.appendChild(img);
+      root.appendChild(figure);
+
+      let extIndex = 0;
+
+      const next = () => {
+        if (extIndex >= extensions.length) {
+          figure.remove();
+          return;
+        }
+
+        img.src =
+          '../../assets/technical-art/shader-graph-named-reroute/shot-' +
+          i +
+          '.' +
+          extensions[extIndex++];
+      };
+
+      img.addEventListener(
+        'load',
+        () => figure.classList.add('loaded'),
+        { once: true }
+      );
+
+      img.addEventListener('error', next);
+      next();
+    }
+
+    setTimeout(() => {
+      if (!root.querySelector('.loaded')) {
+        root.closest('.ta-gallery-wrap')?.remove();
+      }
+    }, 1800);
+  })();
+  </script>
+</body>
+</html>

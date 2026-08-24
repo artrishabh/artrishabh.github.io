@@ -1,0 +1,6 @@
+.vs/
+portfolio-tools/backups/
+*.suo
+*.user
+.DS_Store
+Thumbs.db
